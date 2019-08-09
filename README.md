@@ -1,3 +1,15 @@
+## React-CRA 多页面配置（npm run eject）
+
+版本信息：CRA v2.1.1 + Webpack v4.19.1
+[create-react-app 多页面配置](https://segmentfault.com/a/1190000016960824)
+
+为什么要进行多页面配置
+在使用 React 进行开发的过程中，我们通常会使用 create-react-app 脚手架命令来搭建项目，避免要自己配置 webpack，提高我们的开发效率。但是使用 create-react-app 搭建的项目是单页面应用，如果我们是做中后台管理页面或 SPA，这样是满足要求的，但如果项目有多入口的需求，就需要我们进行一些配置方面的修改。
+
+一般有以下两种方式将脚手架搭建的项目改造为多页面入口编译：
+
+执行 npm run eject 命令，暴露配置文件，进行自定义配置。
+使用 react-app-rewired 修改脚手架配置，在项目中安装 react-app-rewired 后，可以通过创建一个 config-overrides.js 文件来对 webpack 配置进行扩展。
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
